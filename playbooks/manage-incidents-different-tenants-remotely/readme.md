@@ -19,20 +19,20 @@ This approach assumes the following resources on each tenant.
 ### Tenant 2 (remote tenant)
 | Resource Type           | Activity                                        	  		  | Permissions and notes	          				 			                                   |
 |-------------------------|---------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-| ** Managed Identity **  | Authenticate on source tenant (tenant 2)   	   		          | Sentinel Contributor (RG level), Log Analytics reader (RG level)  			     	           |
-| ** App Registration **  | Authenticate on remote tenant (tenant 1)   	   		          | Log Analytics reader (RG level), Sentinel Contributor (RG level), Reader (RG level) (Optional) |
-| ** API Connection **	  | To access Sentinel on source tenant (tenant 2) 		          | Connect with Managed Identity								                                   |
-| ** API Connection	**	  | To access Sentinel on remote tenant (tenant 1) 		          | Connect with Service Principal (or app registration)					                       |
-| ** API Connection	**	  | To access Log Analytics Workspace on remote tenant (tenant 1) | Connect with Service Principal (or app registration) 					                       |
+| **Managed Identity**  | Authenticate on source tenant (tenant 2)   	   		          | Sentinel Contributor (RG level), Log Analytics reader (RG level)  			     	           |
+| **App Registration**  | Authenticate on remote tenant (tenant 1)   	   		          | Log Analytics reader (RG level), Sentinel Contributor (RG level), Reader (RG level) (Optional) |
+| **API Connection**	  | To access Sentinel on source tenant (tenant 2) 		          | Connect with Managed Identity								                                   |
+| **API Connection**	  | To access Sentinel on remote tenant (tenant 1) 		          | Connect with Service Principal (or app registration)					                       |
+| **API Connection**	  | To access Log Analytics Workspace on remote tenant (tenant 1) | Connect with Service Principal (or app registration) 					                       |
 
 ### Tenant 1 (source tenant)
 | Resource Type           | Activity                                        	  		  | Permissions and notes	          				 			                                   |
 |-------------------------|---------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-| ** Managed Identity **  | Authenticate on remote tenant (tenant 1)   	   		          | Sentinel Contributor (RG level), Log Analytics reader (RG level)  			     	           |
-| ** App Registration **  | Authenticate on source tenant (tenant 2)   	   		          | Log Analytics reader (RG level), Sentinel Contributor (RG level), Reader (RG level) (Optional) |
-| ** API Connection **	  | To access Sentinel on remote tenant (tenant 1) 		          | Connect with Managed Identity								                                   |
-| ** API Connection	**	  | To access Sentinel on source tenant (tenant 2) 		          | Connect with Service Principal (or app registration)					                       |
-| ** API Connection	**	  | To access Log Analytics Workspace on source tenant (tenant 2) | Connect with Service Principal (or app registration) 					                       |
+| **Managed Identity**  | Authenticate on remote tenant (tenant 1)   	   		          | Sentinel Contributor (RG level), Log Analytics reader (RG level)  			     	           |
+| **App Registration**  | Authenticate on source tenant (tenant 2)   	   		          | Log Analytics reader (RG level), Sentinel Contributor (RG level), Reader (RG level) (Optional) |
+| **API Connection**	  | To access Sentinel on remote tenant (tenant 1) 		          | Connect with Managed Identity								                                   |
+| **API Connection**	  | To access Sentinel on source tenant (tenant 2) 		          | Connect with Service Principal (or app registration)					                       |
+| **API Connection**	  | To access Log Analytics Workspace on source tenant (tenant 2) | Connect with Service Principal (or app registration) 					                       |
 
 ## Notes
 Additionally, to get fully functionality, is recommended to create Automation rules in both tenants to run this playbooks automatically
