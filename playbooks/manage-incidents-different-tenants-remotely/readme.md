@@ -1,20 +1,17 @@
-# manage incidents on different tenants remotely
+# manage-incidents-on-different-tenants-remotely
 
-The main goal of this two playbooks is to give ability to manage incidents remotely (the same way as Azure LightHouse does) but available for any location (include locations that aren't natively integrating with Azure).
+The main goal of this two playbooks is to give ability to manage incidents remotely (the same way as Azure LightHouse does) but available for any location (include locations that aren't natively integrating with Azure). The main advantage for SOC team is to avoid multiple consoles to manage multiple incidents in multiple tenants.
 
 ## Architecture
-Tenant 2
+### Tenant 2
 - location: remote location (for example outside of SOC location)
 - triggers: assuming that have a dedicated log analytics workspace for themselves
 - data connectors: not relevant. The playbook based in this tenant will trigger an incident creation/update in the source tenant (Tenant 1) as soon as got updated manually/automatically through any analytic rules
 
-Tenant 1
+### Tenant 1
 - location: main location (soc-based location for example)
 - main purpose: managing multiple subscriptions/tenants and want to have all incidents hosted in the same subscription (a replica of many different locations)
 - data connectors: n/a. 
-
-##
-- advantages: avoid SOC analytics to manage different MS sentinel consoles/views
 
 ## Pre-requisites
 This approach assumes the following resources on each tenant.
