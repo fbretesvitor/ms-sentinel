@@ -3,6 +3,9 @@
 The main goal of this two playbooks is to give ability to manage incidents remotely (the same way as Azure LightHouse does) but available for any location (include locations that aren't natively integrating with Azure). The main advantage for SOC team is to avoid multiple consoles to manage multiple incidents in multiple tenants.
 
 ## Architecture
+
+![manage-incidents-overview](../../media/manage-incidents-001.png)
+
 ### Tenant 2
 - location: remote location (for example outside of SOC location)
 - triggers: assuming that have a dedicated log analytics workspace for themselves
