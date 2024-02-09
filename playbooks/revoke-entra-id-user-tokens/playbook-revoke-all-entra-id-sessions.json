@@ -206,7 +206,7 @@
                                     "Host": "login.microsoftonline.com"
                                 },
                                 "method": "POST",
-                                "uri": "https://login.microsoftonline.com/9043bd6a-1f02-4c27-aed8-b63cbac128f9/oauth2/v2.0/token"
+                                "uri": "[concat('https://login.microsoftonline.com/', subscription().tenantId, '/oauth2/v2.0/token')]"
                             },
                             "runAfter": {
                                 "Initialize_variable_3": [
