@@ -15,3 +15,4 @@ The following table present the requirements:
 | **App registration**        | Microsoft Graph \ Application \ User.ReadWrite.All | Add secret to Azure Key Vault                          	    | 
 | **Azure Key Vault**         |                                            	   | Key Vault to host secrets to be consumed by Sentinel playbooks |
 
+### Kudos to https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/AS-Revoke-Azure-AD-User-Session-From-Entity/azuredeploy.json who played a significant part!
