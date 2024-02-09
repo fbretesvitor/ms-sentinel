@@ -9,9 +9,9 @@ When a user got risky status, the SOC team can automatically refresh all entra i
 ## Requirements
 
 The following table present the requirements:
-| Resource                    |  Permissions                               | Notes                                                   |
-| ----------------------------| ------------------------------------------ | --------------------------------------------------------| 
-| **System Managed identity** | Key Vault Secrets user                     | Is the playbook ID. Only available after the deployment |
-| **App registration**        | Microsoft Graph \ App \ User.ReadWrite.All | Secret add to Azure Key Vault                           | 
-| **Key Vault**               |                                            | Key Vault to host secrets to be consumed by Sentinel playbooks |
+| Resource                    |  Permissions                               	   | Notes  	                                                    |
+| ----------------------------| -------------------------------------------------- | ---------------------------------------------------------------| 
+| **System Managed identity** | Key Vault Secrets user                     	   | Is the playbook ID. Only available after the deployment 	    |
+| **App registration**        | Microsoft Graph \ Application \ User.ReadWrite.All | Add secret to Azure Key Vault                          	    | 
+| **Azure Key Vault**         |                                            	   | Key Vault to host secrets to be consumed by Sentinel playbooks |
 
