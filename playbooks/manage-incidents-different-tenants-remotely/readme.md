@@ -4,7 +4,7 @@ The main goal of this two playbooks is to give ability to manage incidents remot
 
 ## Architecture
 
-![manage-incidents-overview](../../media/manage-incidents-001.png)
+![manage-incidents-overview](../../.media/manage-incidents-001.png)
 
 ### Tenant 2
 - location: remote location (for example outside of SOC location)
